@@ -44,32 +44,13 @@
             }
             button:active { background-color:#e44d26; }
         </style>
-       <!-- <script async src="cv.js"></script>-->
-       <!-- <script src='face-detection.js'></script>-->
 	<script src='adapter.js'></script>
         <script src='signalling.js'></script>
         <script src='main.js'></script>
-       <!-- <script  type='text/javascript'>
-            var Module = {
-                preRun: [],
-                postRun: [],
-                print: (function () {
-                    return function (text) {
-                        text = Array.prototype.slice.call(arguments).join(' ');
-                        console.log(text);
-                    };
-                })(),
-                printErr: function (text) {
-                    text = Array.prototype.slice.call(arguments).join(' ');
-                    console.error(text);
-                }
-            };
-        </script>-->
 
     </head>
     <body>
         <h1>Reef Nerd FishCam</h1>
-       <!-- <label id='server' style="display:none;">Web Service URL <input required type="text" id="address" value="" title="hostname (or IP address) and port of the UV4L WebRTC Web Service"/></label>-->
         <div>
             <button id='start' title="If you do not see any video stream, make sure your browser supports the codec used within this demo (see the source code for details, or try Firefox or Chrome)">Start Streaming</button>
             <button id='stop'>Stop Streaming</button>
@@ -79,20 +60,5 @@
 
         </div>
         <video id='v' playsinline autoplay></video>
-        <!--<canvas id='c'></canvas>-->
-        <!--<button id='effect' style="display:none;">Toggle Face Detection</button>-->
-       <!-- <script>
-            // Let's get a default address for the signalling server
-            var address = document.getElementById('address').value;
-            if (!address || address === '') {
-                var hostname = location.hostname;
-                if (hostname) {
-                    address = hostname + ':' + (location.port || (location.protocol === 'https:' ? 443 : 80)) + '/webrtc';
-                    document.getElementById('address').value = address;
-                } else {
-                    document.getElementById('address').value = "<host>:<port>/webrtc";
-                }
-            }
-        </script>-->
     </body>
 </html>
